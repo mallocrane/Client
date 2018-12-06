@@ -1,0 +1,54 @@
+.menu {
+    background-color: white;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.menu .avatar {
+    border-radius: 500px;
+}
+
+.menu.small {
+    width: 100px;
+}
+
+.menu.extended {
+    width: 100px;
+}
+
+/* Avatar */
+
+.menu.small .avatar {
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.menu.extended .avatar {
+    width: 100px;
+}
+
+/* Icons */
+
+.menu.small .menu_icon {
+    width: 35px;
+    margin-left: 32px;
+    margin-top: 20px;
+}
+
+.menu.small .icons_group {
+    margin-top: 20px;
+}
+
+.menu.small .extend_icon {
+    position: absolute;
+    bottom: 20px;
+}
+
+.menu.small .extend_icon .menu_icon {
+    width: 20px;
+    margin-left: 40px;
+}

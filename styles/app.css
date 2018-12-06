@@ -1,0 +1,14 @@
+html, body {
+    
+}
+
+.container {
+    background-color: #F0BFAB;
+    
+    position: absolute;
+
+    left: 100px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}

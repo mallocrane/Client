@@ -4,10 +4,27 @@
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="styles/app.css">
+        <link rel="stylesheet" type="text/css" href="styles/menu.css">
     </head>
 
     <body ng-app="app">
         
+        <nav class="menu small">
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+
+            <div class="icons_group">
+                <img src="images/icons/dashboard.png" alt="" class="menu_icon">
+                <img src="images/icons/notes.png" alt="" class="menu_icon">
+                <img src="images/icons/pencil.png" alt="" class="menu_icon">
+                <img src="images/icons/history.png" alt="" class="menu_icon">
+                <img src="images/icons/settings.png" alt="" class="menu_icon">
+            </div>
+
+            <div class="extend_icon">
+                <img src="images/icons/extend.png" alt="" class="menu_icon menu_extend">
+            </div>
+        </nav>
+
         <div class="container" ng-view>
 
         </div>
