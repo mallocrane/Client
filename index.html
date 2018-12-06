@@ -1,9 +1,24 @@
 <html>
     <head>
         <title>???????</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="styles/app.css">
     </head>
 
-    <body>
+    <body ng-app="app">
         
+        <div class="container" ng-view>
+
+        </div>
+
+        <!-- Add all scripts -->
+        <script type="text/javascript" src="scripts/angular.js"></script>
+        <script type="text/javascript" src="scripts/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="scripts/app.js"></script>
+
+        <!-- Controllers -->
+        <script type="text/javascript" src="scripts/Controllers/MainController.js"></script>
     </body>
 </html>
