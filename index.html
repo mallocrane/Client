@@ -5,23 +5,49 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="styles/app.css">
         <link rel="stylesheet" type="text/css" href="styles/menu.css">
+
+        <meta charset="UTF-8">
     </head>
 
     <body ng-app="app">
         
-        <nav class="menu small">
+        <nav class="menu " ng-class="{small: extended == false, extended: extended}" ng-controller="MenuController">
             <img src="images/avatar.jpg" alt="Avatar" class="avatar">
 
-            <div class="icons_group">
-                <img src="images/icons/dashboard.png" alt="" class="menu_icon">
-                <img src="images/icons/notes.png" alt="" class="menu_icon">
-                <img src="images/icons/pencil.png" alt="" class="menu_icon">
-                <img src="images/icons/history.png" alt="" class="menu_icon">
-                <img src="images/icons/settings.png" alt="" class="menu_icon">
+            <div class="username" ng-show="extended">
+                Jean Dupont
+            </div>
+
+            <div class="icons_group" ng-hide="extended">
+                <a href="#"><img src="images/icons/dashboard.png" alt="" class="menu_icon"></a>
+                <a href="#"></a><img src="images/icons/notes.png" alt="" class="menu_icon"></a>
+                <a href="#"></a><img src="images/icons/pencil.png" alt="" class="menu_icon"></a>
+                <a href="#"><img src="images/icons/history.png" alt="" class="menu_icon"></a>
+                <a href="#"><img src="images/icons/settings.png" alt="" class="menu_icon"></a>
+            </div>
+
+            <div class="links_group" ng-show="extended">
+                <a href="" class="menu_link">Dashboard</a>
+                <hr/>
+                <a href="" class="menu_link">Carnet de notes</a>
+                <hr/>
+                <a href="" class="menu_link">Tableau</a>
+                <hr/>
+                <a href="" class="menu_link">Historique</a>
+                <hr/>
+                <a href="" class="menu_link">Paramètres</a>
+                <hr/>
+            </div>
+
+            <div class="logout" ng-show="extended">
+                Déconnexion
             </div>
 
             <div class="extend_icon">
-                <img src="images/icons/extend.png" alt="" class="menu_icon menu_extend">
+                <img src="images/icons/extend.png" alt="" class="menu_icon menu_extend" 
+                    ng-click="toggleExtend();" ng-hide="extended">
+                <img src="images/icons/shrink.png" alt="" class="menu_icon menu_extend" 
+                    ng-click="toggleExtend();" ng-show="extended">
             </div>
         </nav>
 
@@ -30,6 +56,7 @@
         </div>
 
         <!-- Add all scripts -->
+        <script type="text/javascript" src="scripts/jquery.js"></script>
         <script type="text/javascript" src="scripts/angular.js"></script>
         <script type="text/javascript" src="scripts/angular-route.min.js"></script>
 
@@ -37,5 +64,6 @@
 
         <!-- Controllers -->
         <script type="text/javascript" src="scripts/Controllers/MainController.js"></script>
+        <script type="text/javascript" src="scripts/Controllers/MenuController.js"></script>
     </body>
 </html>
