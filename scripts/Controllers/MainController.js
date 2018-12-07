@@ -2,8 +2,7 @@ app.controller('MainController', function ($scope, $rootScope, HttpService) {
 
     $scope.getWeather = function() {
         HttpService.getWeather(1).then(function(data){
-            console.log(data);
-            $scope.loading = false;
+            $scope.currentData = data[0];
         }, function(msg){
             console.log('fail');
         });

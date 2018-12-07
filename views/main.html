@@ -1,16 +1,47 @@
 <div class="dashboard" ng-controller="MainController">
+    <div class="bandeau">
+        <h1>Dashboard</h1>
+    </div>
     <div class="hexagons">
         <div class="hexagon col-3">
             <img src="images/hexagon.png" alt="">
+            <p class="hexagon_text">
+                {{ currentData.temperature }}°C
+            </p>
+            <p class="hexagon_description">
+                Temperature
+            </p>
+            <hr>
         </div>
         <div class="hexagon col-3">
             <img src="images/hexagon.png" alt="">
+            <p class="hexagon_text">
+                {{ currentData.hygrometry }}%
+            </p>
+            <p class="hexagon_description">
+                Hygrométrie
+            </p>
+            <hr>
         </div>
         <div class="hexagon col-3">
             <img src="images/hexagon.png" alt="">
+            <p class="hexagon_text">
+                {{ currentData.wind_speed }} km/h
+            </p>
+            <p class="hexagon_description">
+                Vitesse du vent
+            </p>
+            <hr>
         </div>
         <div class="hexagon col-3">
             <img src="images/hexagon.png" alt="">
+            <p class="hexagon_text">
+                {{ currentData.wind_direction }}°
+            </p>
+            <p class="hexagon_description">
+                Direction du vent
+            </p>
+            <hr>
         </div>
     </div>
 </div>

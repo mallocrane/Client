@@ -1,8 +1,45 @@
+.dashboard .hexagons {
+    padding-left: 20%;
+    padding-right: 20%;
+
+    margin-top: 250px;
+}
+
 .dashboard .hexagon {
     display: inline-block;
-    
+    position: relative;
 }
 
 .dashboard .hexagon img {
-    max-width: 250px;
+    width: 100%;
+}
+
+.dashboard .hexagon .hexagon_text {
+    position: absolute;
+    top: 18%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+
+    z-index: 100;
+
+    font-size: 46px;
+
+    font-weight: 700;
+    color: #E37044;
+}
+
+.dashboard .hexagon .hexagon_description {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #E37044;
+    font-size: 26;
+}
+
+.dashboard .hexagon hr {
+    margin-top: -20px;
+    border: solid 3px #E37044;
+    width: 80%;
 }
