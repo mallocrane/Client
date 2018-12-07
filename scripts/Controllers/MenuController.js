@@ -7,9 +7,9 @@ app.controller('MenuController', function ($scope, $rootScope ) {
 
         // Extend or Shrink the menu
         if ($scope.extended) {
-            $(".container").css('left', 300);
+            $(".view_container").css('left', 300);
         } else {
-            $(".container").css('left', 100);
+            $(".view_container").css('left', 100);
         }
     }
 });

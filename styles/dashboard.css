@@ -1,0 +1,8 @@
+.dashboard .hexagon {
+    display: inline-block;
+    
+}
+
+.dashboard .hexagon img {
+    max-width: 250px;
+}
