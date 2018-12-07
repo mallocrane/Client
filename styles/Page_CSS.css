@@ -1,0 +1,39 @@
+/* 404 Web page - NUIT DE L'INFO: malloc(rane) Group © 2018. */
+
+/* Page design. */
+
+.canvas #canvas {
+	/*position:absolute;
+	font-size:70px;
+	color:#000000;
+	z-index:3;
+	margin:auto;
+	width:120px;*/
+	text-align:center;
+}
+
+.canvas #title {
+	vertical-align:middle;
+}
+
+/* Hidden function. */
+.canvas .hidden {
+	display: none;
+}
+
+.canvas .visible {
+	display: inline;
+}
+
+.canvas .visible_img{
+	display: inline;
+	border-width:2px;
+	border-style:groove;
+	border-color:black;
+}
+
+.canvas #0{
+	border-width:2px;
+	border-style:groove;
+	border-color:black;
+}

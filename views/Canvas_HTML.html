@@ -1,0 +1,44 @@
+<!-- 404 Web page - NUIT DE L'INFO: malloc(rane) Group © 2018. -->
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf8">
+	<!-- Call to every CSS and JS scripts. -->
+	<script language="JavaScript" src="../scripts/jquery-3.3.1.js"></script>
+	<script language="JavaScript" src="../scripts/game_Morpion.js" type="text/javascript"></script>
+	<link href="../styles/Canvas_CSS.css" rel="stylesheet" type="text/css" media="screen"/>
+	<title>Morpion</title>
+</head>
+
+<body>
+	<!-- DIV which allows CANVAS managment. -->
+	<div id="canvas">
+		<div id="game" class="hidden">
+			<canvas id="Canvas">
+				Votre système ne supporte pas le type CANVAS.
+			</canvas>
+		<br><center>
+		<div id="name"></div></center>
+		<br><center><INPUT type="button" value="New game !" onClick="reload()" id="play"></center>
+	</div>
+	<div id="winner" class="hidden">
+		<center>
+			<br><br>Gagnant de la partie :
+			<br><b><div id="winner_name"></div></b>
+			<br><div id="loose"></div>
+			<br><br><INPUT type="button" value="Nouvelle partie" onClick="reload()" id="play">
+		</center>
+	</div>
+	<div id="start" class="visible">
+		<p>
+			<center>
+				<div id="title"> THE MORPION </div>
+				<br><br><div id="error"></div>
+				<br>✗ Nom du <b>premier joueur</b> ✗
+				<br><INPUT type="text" value="" id="player1">
+				<br><br><b>◯</b> Nom du <b>second joueur</b> <b>◯</b>
+				<br><INPUT type="text" value="" id="player2">
+				<br><br><br><INPUT type="button" value="Commencer la partie" onClick="Play()" id="play">
+	    	</center>
+	</div>
+</body>

@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="styles/menu.css">
         <link rel="stylesheet" type="text/css" href="styles/dashboard.css">
         <link rel="stylesheet" type="text/css" href="styles/grid.css">
+        <link rel="stylesheet" type="text/css" href="styles/Canvas_CSS.css">
+        <link rel="stylesheet" type="text/css" href="styles/Page_CSS.css">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
@@ -23,23 +25,24 @@
             </div>
 
             <div class="icons_group" ng-hide="extended">
-                <a href="#"><img src="images/icons/dashboard.png" alt="" class="menu_icon"></a>
-                <a href="#"></a><img src="images/icons/notes.png" alt="" class="menu_icon"></a>
-                <a href="#"></a><img src="images/icons/pencil.png" alt="" class="menu_icon"></a>
-                <a href="#"><img src="images/icons/history.png" alt="" class="menu_icon"></a>
-                <a href="#"><img src="images/icons/settings.png" alt="" class="menu_icon"></a>
+                {{ $rootScope.time }}
+                <a ng-href="#!/"><img src="images/icons/dashboard.png" alt="" class="menu_icon"></a>
+                <a ng-href="#!/error"><img src="images/icons/notes.png" alt="" class="menu_icon"></a>
+                <a ng-href="#!/error"><img src="images/icons/pencil.png" alt="" class="menu_icon"></a>
+                <a ng-href="#!/error"><img src="images/icons/history.png" alt="" class="menu_icon"></a>
+                <a ng-href="#!/error"><img src="images/icons/settings.png" alt="" class="menu_icon"></a>
             </div>
 
             <div class="links_group" ng-show="extended">
-                <a href="" class="menu_link">Dashboard</a>
+                <a ng-href="#!/" class="menu_link">Dashboard</a>
                 <hr/>
-                <a href="" class="menu_link">Carnet de notes</a>
+                <a ng-href="#!/error" class="menu_link">Todo</a>
                 <hr/>
-                <a href="" class="menu_link">Tableau</a>
+                <a ng-href="!/error" class="menu_link">Tableau</a>
                 <hr/>
-                <a href="" class="menu_link">Historique</a>
+                <a ng-href="!/error" class="menu_link">Historique</a>
                 <hr/>
-                <a href="" class="menu_link">Paramètres</a>
+                <a ng-href="!/error" class="menu_link">Paramètres</a>
                 <hr/>
             </div>
 
@@ -72,5 +75,10 @@
         <!-- Controllers -->
         <script type="text/javascript" src="scripts/Controllers/MainController.js"></script>
         <script type="text/javascript" src="scripts/Controllers/MenuController.js"></script>
+        <script type="text/javascript" src="scripts/Controllers/TodoController.js"></script>
+        <script type="text/javascript" src="scripts/Controllers/ClockController.js"></script>
+        
+        <script type="text/javascript" src="scripts/game_Hangman.js"></script>
+        <script type="text/javascript" src="scripts/system_PopUp.js"></script>
     </body>
 </html>

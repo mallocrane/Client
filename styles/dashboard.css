@@ -29,6 +29,10 @@
     color: #E37044;
 }
 
+html.night .dashboard .hexagon .hexagon_text {
+    color: #08275B;
+}
+
 .dashboard .hexagon .hexagon_description {
     width: 100%;
     margin-top: 30px;
@@ -38,8 +42,16 @@
     font-size: 26;
 }
 
+html.night .dashboard .hexagon .hexagon_description {
+    color: #08275B;
+}
+
 .dashboard .hexagon hr {
     margin-top: -20px;
     border: solid 3px #E37044;
     width: 80%;
+}
+
+html.night .dashboard .hexagon hr {
+    border: solid 3px #08275B;
 }

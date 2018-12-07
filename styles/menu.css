@@ -42,6 +42,10 @@
     font-size: 22;
 }
 
+html.night .menu.extended .username {
+    color: #08275B;
+}
+
 /* Icons */
 
 .menu.small .menu_icon {
@@ -92,6 +96,14 @@
     text-transform: uppercase;
 }
 
+html.night .menu.extended .menu_link {
+    color: #08275B;
+}
+
 .menu.extended .links_group hr {
     border-color: #E37044;
+}
+
+html.night .menu.extended .links_group hr {
+    border-color: #08275B;
 }

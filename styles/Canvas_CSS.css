@@ -1,0 +1,124 @@
+/* 404 Web page - NUIT DE L'INFO: malloc(rane) Group © 2018. */
+
+/* Hidden function. */
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: inline;
+}
+
+
+/* Page design. */	
+.canvas * {margin: 0; padding: 0;}
+
+.canvas #canvas {
+	/*position:absolute;
+	font-size:70px;
+	color:#000000;
+	z-index:3;
+	margin:auto;
+	width:120px;*/
+	text-align:center;
+}
+
+.canvas #bck {
+	width: 50%;
+	position : absolute;
+}
+	
+.canvas #background {
+	width: 500px;
+    height: 500px;
+	display: block;
+	position : absolute;
+}
+	
+.canvas #title {
+	font-size:42px;
+	top:80px;
+	left:105px;
+	color:#000000;
+	z-index:2;
+}
+	
+.canvas .position{
+	position:absolute;
+	z-index:2;
+}
+
+.canvas #icon {width: 20px;}
+.canvas #iconcr {width: 40px;}
+.canvas #iconci {width: 40px;}
+.canvas #error {color:#FF0000;}
+.canvas #winner_name {font-size:140%;}
+.canvas #end {width:80%;}
+
+.canvas #player1 {
+	width: 95%;
+	height: 35px;
+	font-family:Arial;
+	text-align:center;
+	font-size:15px;
+	-moz-box-shadow: 0px 0px 5px #343434;
+    -webkit-box-shadow: 0px 0px 5px #343434;
+    -o-box-shadow: 0px 0px 5px #343434;
+    box-shadow: 0px 0px 5px #343434;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #656565;
+}
+
+.canvas #player2 {
+	width: 95%;
+	height: 35px;
+	font-family:Arial;
+	text-align:center;
+	font-size:15px;
+	-moz-box-shadow: 0px 0px 5px #343434;
+    -webkit-box-shadow: 0px 0px 5px #343434;
+    -o-box-shadow: 0px 0px 5px #343434;
+    box-shadow: 0px 0px 5px #343434;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #656565;
+}
+
+#play {
+	width: 95%;
+	height: 45px;
+	font-family:Arial;
+	font-size:15px;
+	-webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    -webkit-box-shadow: 0px 1px 1px #666666;
+    -moz-box-shadow: 0px 1px 1px #666666;
+    color: #000000;
+    background: "rgba(255,255,255,0)";
+    text-decoration: none;
+    text-align:center;
+}
+
+#soon {
+	width: 95%;
+	height: 45px;
+	font-family:Arial;
+	font-size:15px;
+	-webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    -webkit-box-shadow: 0px 1px 1px #666666;
+    -moz-box-shadow: 0px 1px 1px #666666;
+    color: #666666;
+    background: "rgba(255,255,255,0)";
+    text-decoration: none;
+    text-align:center;
+}
+
+#play:hover {
+  background: #DDDDDD;
+  text-decoration: none;
+  text-align:center;
+}

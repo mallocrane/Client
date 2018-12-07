@@ -13,6 +13,10 @@ html, body {
     bottom: 0px;
 }
 
+html.night .view_container {
+    background-color: #465D84;
+}
+
 a {
     text-decoration: none;
 }
@@ -26,8 +30,27 @@ a {
     background-color: #E37044;
 }
 
+html.night .bandeau {
+    background-color: #08275B;
+}
+
 .bandeau h1 {
     font-size: 40;
+    line-height: 100px;
+    color: white;
+    margin: 0px;
+    margin-left: 30px;
+}
+
+.bandeau .clock {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    height: 100px;
+}
+
+.bandeau .clock p {
+    font-size: 30;
     line-height: 100px;
     color: white;
     margin: 0px;
